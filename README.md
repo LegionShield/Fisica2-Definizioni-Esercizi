@@ -1,2 +1,1 @@
-# Fisica2-Definizioni-Esercizi
-Prontuario LaTeX di Fisica: Definizioni da inserire negli esercizi pratici su Elettrostatica e Magnetostatica nel vuoto e nella materia.
+📂 Argomenti Trattati⚡ ElettrostaticaCampo Elettrico e Potenziale: Legge di Coulomb, principio di sovrapposizione.Legge di Gauss: Applicazioni per simmetrie (sferica, cilindrica, piana).Conduttori e Dielettrici: Capacità, energia del campo, polarizzazione.🧲 MagnetostaticaForza di Lorentz e Bio-Savart: Calcolo del campo $B$ per fili, spire e solenoidi.Legge di Ampère: Circuitazione del campo magnetico.Proprietà Magnetiche della Materia: Diamagnetismo, paramagnetismo e ferromagnetismo.
