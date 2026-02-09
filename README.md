@@ -30,9 +30,7 @@ Questo repository contiene un prontuario in **LaTeX** pensato per la preparazion
 
 ---
 
-## 🚀 Contribuire
-Se trovi un errore nelle formule o vuoi aggiungere un esempio di esercizio tipo, sentiti libero di aprire una **Pull Request** o segnalarlo nelle **Issues**.
 
----
-**Autore:** [Il Tuo Nome/Username]  
+
+---  
 **Tag:** #Fisica #University #LaTeX #Elettrostatica #Magnetostatica
