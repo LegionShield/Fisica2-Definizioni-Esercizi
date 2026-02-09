@@ -1,0 +1,106 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{xcolor}
+
+\geometry{margin=2.5cm}
+
+\begin{document}
+
+
+\begin{center}
+    {\Huge \textbf{FISICA 2}} \\
+    \vspace{0.5cm}
+    {\Large \textbf{Argomento:} Definizioni da inserire nello svolgimento esercizi} \\
+    \vspace{0.3cm}
+    {\large \textbf{Autore:} LEGION} \\
+    \vspace{0.5cm}
+    \hrule height 1pt
+\end{center}
+
+\vspace{1cm}
+
+
+\section*{ELETTROSTATICA}
+
+\subsection*{Teorema di Gauss}
+Il flusso del campo elettrico $\vec{E}$ attraverso una superficie $\Sigma$ chiusa è pari alla somma algebrica delle cariche interne diviso la costante dielettrica del vuoto $\varepsilon_0$:
+\[
+\Phi(\vec{E}) = \oint_\Sigma \vec{E} \cdot d\vec{A} = \frac{Q_{\text{int}}}{\varepsilon_0}
+\]
+Le cariche sono \textbf{sorgenti} (se positive) o \textbf{pozzi} (se negative) delle linee di forza del campo elettrico. Inoltre, questo teorema lega una proprietà globale del campo (il flusso) alla distribuzione delle sue sorgenti (le cariche).
+
+\subsection*{Potenziale Elettrico}
+Il potenziale è una funzione scalare opposta a $\vec{E}$:
+\[
+\vec{E} = - \nabla V \quad (\text{dove } \nabla \text{ è il gradiente})
+\]
+Deriva dalla proprietà di conservazione del campo elettrostatico. $V$ si ottiene integrando $\vec{E}$ dall'infinito (dove $V(\infty)=0$) verso il centro.
+
+\subsection*{Linee di Campo in base a $Q$}
+\begin{itemize}
+    \item Se le cariche superficiali sono \textbf{positive (+)}, sono sorgenti e le linee di campo sono \textbf{uscenti}.
+    \item Se sono \textbf{negative (-)}, sono pozzi e le linee sono \textbf{entranti} (provengono dall'infinito e terminano in $r$, aumentando l'intensità).
+\end{itemize}
+
+\subsection*{Energia Elettrostatica $U(r)$}
+L'energia elettrostatica è localizzata nello spazio occupato dal campo elettrico. Nel sistema in esame (caso con campo in $R_1 < r < R_2$ e $r > R_3$) è distribuita in 2 volumi distinti separati dal conduttore esterno:
+\begin{enumerate}
+    \item Per $R_1 < r < R_2$: $U(r)$ è associata al campo generato/terminato da $q_1$ (+ sorgente / - pozzo).
+    \item Per $r > R_3$: è distribuita dal raggio $R_3$ fino all'infinito, associata al campo generato dall'intera carica del sistema.
+\end{enumerate}
+
+\begin{center}
+\fbox{
+    \parbox{0.9\textwidth}{
+    \textbf{NOTA BENE:} $U(r)$ per $r > R_3$ va sempre verso infinito. Questo non dipende dal verso del campo: ovvero, se $Q_{\text{esterna}}$ è positiva (linee uscenti) o negativa (linee entranti), il fatto che l'energia sia estesa verso l'esterno non cambia.
+    }
+}
+\end{center}
+
+\subsection*{Lavoro e Conservatività}
+Il lavoro compiuto dalla forza elettrica per spostare una carica lungo un percorso chiuso è nullo:
+\[
+\oint \vec{E} \cdot d\vec{s} = 0
+\]
+Quindi il lavoro non dipende dal percorso svolto dalla carica, ma solo dai punti iniziali e finali. Questo caratterizza il \textbf{principio di conservatività} del campo elettrostatico.
+
+\subsection*{Conduttori Collegati}
+Se $R_1$ è collegato ad $R_2$: i due conduttori diventano un \textbf{unico conduttore equipotenziale}. La carica $q_1$ va in $R_2$ annullandosi; tra $R_1$ ed $R_2$ il campo elettrico si annulla ($E=0$) e il sistema si comporta come un'unica sfera conduttrice.
+
+\vspace{1cm}
+\hrule
+\vspace{1cm}
+
+
+\section*{MAGNETOSTATICA}
+
+\subsection*{Flusso del Campo Magnetico}
+Il flusso del campo magnetico $\vec{B}$ attraverso una superficie chiusa $\gamma$ è sempre nullo:
+\[
+\oint_\gamma \vec{B} \cdot d\vec{A} = 0
+\]
+Non esistono cariche magnetiche isolate (monopoli), le linee di campo sono chiuse e il campo è solenoidale.
+
+\subsection*{Legge di Ampère}
+Per calcolare $\vec{B}$ si utilizza Ampère che afferma: la circuitazione di $\vec{B}$ lungo una linea chiusa $\gamma$ è:
+\[
+\oint_\gamma \vec{B} \cdot d\vec{s} = \mu_0 \cdot i_{\text{concatenata}}
+\]
+
+\subsection*{Forza Magnetica (Legge di Laplace)}
+La forza che esercita il filo su un filo 2 si calcola utilizzando Laplace:
+\[
+d\vec{F} = i \, d\vec{l} \times \vec{B}
+\]
+Questa formula descrive la forza magnetica elementare che un campo magnetico esterno esercita su un elemento infinitesimale di filo ($dl$) percorso da corrente $i$.
+
+La forza $F_{2,1}$ è data da:
+\[
+F_{2,1} = i_2 \cdot \left( \frac{\mu_0 i_1}{2\pi r} \right)
+\]
+
+\end{document}
